@@ -1,0 +1,10 @@
+: name: Runner Test on Windows
+on:
+  workflow_dispatch:
+jobs:   test:     runs-on: self-hosted
+    steps:
+-	name: Print message
+        run: echo Runner is working successfully
+-	name: Show computer name        run: hostname
+-	name: Show current user        run: whoami
+-	name: Show current directory        run: cd
